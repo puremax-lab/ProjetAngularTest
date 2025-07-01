@@ -1,5 +1,74 @@
-<h1>
+<!-- <h1>
   {{title}}
-</h1>
+</h1> -->
 <!-- <img [src]="imageUrl" alt=""> -->
- <a [href]="siteUrl" target="_blank">{{linkText}}</a>
+
+<!-- <a [href]="siteUrl" target="_blank">{{linkText}}</a> -->
+<!-- <button [disabled]="isDisabled">Envoyer</button> -->
+
+<!-- <input type="checkbox" [checked]="isChecked"> -->
+<!-- <button (click)="changeTitle()">Change</button> -->
+
+ <!-- <input type="text" [(ngModel)]="prenom"> -->
+ <!-- <p>Bonjour {{prenom}}</p> -->
+
+<!-- <input type="text" [(ngModel)]="email" placeholder="email" required="">
+<p>Votre adresse email est : {{email}}</p>
+<button (click)="envoyer()">Afficher en pop up</button> -->
+
+<h2>
+  Choisissez votre pays préféré :
+</h2>
+
+<!-- <ul style="list-style-type: none; padding: 0;">
+  <li>
+    <label>
+      <input type="checkbox" [(ngModel)]="belgique">
+      Belgique
+    </label>
+  </li>
+  <li>
+    <label>
+      <input type="checkbox" [(ngModel)]="france">
+      France
+    </label>
+  </li>
+  <li>
+    <label>
+      <input type="checkbox" [(ngModel)]="espagne">
+      Espagne
+    </label>
+  </li>
+  <li>
+    <label>
+      <input type="checkbox" [(ngModel)]="italie">
+      Italie
+    </label>
+  </li>
+  <li>
+    <label>
+      <input type="checkbox" [(ngModel)]="allemagne">
+      Allemagne
+    </label>
+  </li>
+  <li>
+    <label>
+      <input type="checkbox" [(ngModel)]="paysBas">
+      Pays-Bas
+    </label>
+  </li>
+</ul> -->
+
+<select [(ngModel)]="paysSelectionne">
+  <option value="Belgique">Belgique</option>
+  <option value="France">France</option>
+  <option value="Espagne">Espagne</option>
+  <option value="Italie">Italie</option>
+  <option value="Allemagne">Allemagne</option>
+  <option value="Pays-Bas">Pays-Bas</option>
+</select>
+
+<p>
+  paysSelectionne : 
+  <strong>{{paysSelectionne || "aucun"}}</strong>
+</p>
