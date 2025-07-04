@@ -16,9 +16,9 @@
 <p>Votre adresse email est : {{email}}</p>
 <button (click)="envoyer()">Afficher en pop up</button> -->
 
-<h2>
+<!-- <h2>
   Choisissez votre pays préféré :
-</h2>
+</h2> -->
 
 <!-- <ul style="list-style-type: none; padding: 0;">
   <li>
@@ -59,7 +59,7 @@
   </li>
 </ul> -->
 
-<select [(ngModel)]="paysSelectionne">
+<!-- <select [(ngModel)]="paysSelectionne">
   <option value="Belgique">Belgique</option>
   <option value="France">France</option>
   <option value="Espagne">Espagne</option>
@@ -71,4 +71,120 @@
 <p>
   paysSelectionne : 
   <strong>{{paysSelectionne || "aucun"}}</strong>
+</p> -->
+
+<!-- <h2>
+  feuilles de présence - CFITECH
+</h2>
+
+<button (click)="marquePresent()">Present</button>
+
+<button (click)="marqueAbsent()">Absent</button>
+
+<p *ngIf="estPresent">
+  Bonjour, votre présence a la formarion est bien enregistré !
+</p> -->
+
+<!-- <h2>Liste des formateurs - CFOITECH</h2>
+
+<li *ngFor="let prenom of formateurs">
+  {{prenom}}
+</li> -->
+
+<h2>Portail utilisateur</h2>
+
+<!-- directive switch -->
+<!-- <div [ngSwitch]="role"> -->
+  <!-- cas 1 : admin -->
+  <!-- <p *ngSwitchCase="'admin'">
+    Bienvenue administrateur ! Vous pouvez gérer la plateforme.
+  </p> -->
+  <!-- cas 2 : formaateur -->
+  <!-- <p *ngSwitchCase="'formateur'">
+    Bienvenue formateur ! Vous pouvez gérer vos cours.
+  </p> -->
+  <!-- cas 3 : stagiaire -->
+  <!-- <p *ngSwitchCase="'stagiaire'">
+    Bienvenue stagiaire ! Vous pouvez accéder à vos cours.
+  </p> -->
+  <!-- cas par défaut -->
+  <!-- <p *ngSwitchDefault>
+    role non reconnu.
+  </p>
+</div> -->
+
+<!-- <input type="text" [(ngModel)]="role">
+<span [ngSwitch]="role">
+  <p *ngSwitchCase="'admin'">
+    Vous etes un administrateur.
+  </p>
+  <p *ngSwitchCase="'formateur'">
+    Vous etes un formateur.
+  </p>
+  <p *ngSwitchCase="'stagiaire'">
+    Vous etes un stagiaire.
+  </p>
+  <p *ngSwitchDefault>
+    Role non reconnu. 
+  </p>
+</span> -->
+
+<!-- <label for="role">Saisissez votre role :</label>
+<input id="role" [(ngModel)]="role" placeholder="ex: admin,formateur, stagiaire"/> -->
+<!-- affichage conditionnel selon la saisie -->
+
+<!-- directive ngswitch -->
+<!-- <div [ngSwitch]="role"> -->
+
+  <!-- cas 1 admin -->
+  <!-- <p *ngSwitchCase="'admin'">
+    Bienvenue administrateur ! Vous pouvez gérer la plateforme.
+  </p>   -->
+  <!-- cas 2 formateur -->
+  <!-- <p *ngSwitchCase="'formateur'">
+    Bienvenue formateur ! Vous pouvez gérer vos cours.
+  </p> -->
+  <!-- cas 3 stagiaire -->
+  <!-- <p *ngSwitchCase="'stagiaire'">
+    Bienvenue stagiaire ! Vous pouvez accéder à vos cours.
+  </p> -->
+  <!-- cas par défaut -->
+  <!-- <p *ngSwitchDefault>
+    Role non reconnu.
+  </p>
+</div> -->
+
+<!-- <div [ngClass]="classCss">
+  <h2>Formateur : M.Jean-Aimable</h2>
+  <p>Centre : CFITECH</p>
+  <p>Formation : Developpeur Web</p>
+  <p>Cours: Angular</p>
+</div>
+<div [ngClass]="classCss">
+  <h2>stagiaire : M.Diallo</h2>
+  <p>Centre : CFITECH</p>
+  <P>Formation : Développeur Web</P>
+  <p>Cours: Angular</p>
+</div> -->
+
+<!-- <div [ngClass]="classCss">
+  <h2>Stagiaire : Charles</h2>
+  <p>Formation : Développeur Web</p>
+  <p>Centre : CFITECH</p>
+  <p>Cours : Angular</p>
+</div> -->
+
+<!-- <div [ngClass]="{'active': estPresent, 'disabled': estAbsent}">
+  <h2>Stagiaire : Charles</h2>
+  <p>Formation : Developpeur Web</p>
+  <p>Centre : CFITECH</p>
+  <p>Cours: Angular</p>
+</div> -->
+
+<h2>Couleur</h2>
+<button (click)="couleur = 'rouge'">Rouge</button>
+<button (click)="couleur = 'vert'">Vert</button>
+<button (click)="couleur = 'bleu'">Bleu</button>
+<p [ngClass]="couleur">
+  ce texte change de couleur
 </p>

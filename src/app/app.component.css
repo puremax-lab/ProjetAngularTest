@@ -1,0 +1,41 @@
+.carte-formateur-stagiaire {
+  border: 2px solid #007BFF;
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #e6f2ff;
+  box-shadow: 0 2px 8PX rgba(0, 123, 255, 0.2);
+}
+
+.carte-stg-forme{
+    padding: 16px;
+    border-radius: 8px;
+    background-color: #fff3cd;
+    border: 1px solid #ffeeba
+}
+
+.carte-stg-visuel{
+    box-shadow: 0 2px 8px rgba(255, 193, 7, 0.4);
+    font-weight: bold;
+}
+
+.active{
+    background-color: #d4edda;
+    border: 2px solid #28a745;
+    color: #155724;
+}
+.disabled{
+    background-color: #f8d7da;
+    border: 2px solid #dc3545;
+    color: #721c24;
+    opacity: 0.6;
+}
+
+.rouge{
+    color: red;
+}
+.vert{
+    color: green;
+}
+.bleu{
+    color: blue;
+}
